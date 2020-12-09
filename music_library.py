@@ -83,3 +83,14 @@ albums_by_artist_search = album_repository.albums_by_artist(artist_5)
 print(len(albums_by_artist_search))
 for album in albums_by_artist_search:
     print(album.__dict__)
+
+
+# DELETE ONE JACK WHITE ALBUM
+album_repository.delete_id(4)
+
+print("--------------------------")
+# CHECK ALBUM WAS DELETED
+albums_by_artist_search = album_repository.albums_by_artist(artist_5)
+print(len(albums_by_artist_search))
+for album in albums_by_artist_search:
+    print(album.__dict__)
